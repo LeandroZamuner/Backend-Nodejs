@@ -1,4 +1,3 @@
-const { Router } = require('express');
 const express = require('express');
 const ProductsService = require('./../services/productService');
 const validatorHandler = require('./../middlewares/validatorHandler');
