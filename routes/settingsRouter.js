@@ -5,8 +5,8 @@ const router = express.Router();
 const services = new settingsService();
 
 router.get('/', async (req, res) => {
-  const products = await services.find();
-  res.json(products);
+  const menu = await services.find();
+  res.json(menu);
 });
 
 module.exports = router;
