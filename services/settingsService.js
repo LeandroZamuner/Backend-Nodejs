@@ -295,11 +295,7 @@ class settingsService {
   }
 
   find() {
-    (resolve, reject) => {
-      setTimeout(() => {
-        resolve(this.menu);
-      }, 2000);
-    };
+    return this.menu;
   }
 }
 
