@@ -1,5 +1,5 @@
 const express = require('express');
-const settingsRouter = require('../services/settingsService');
+const settingsService = require('../services/settingsService');
 const validatorHandler = require('../middlewares/validatorHandler');
 const {
   createProductSchema,
@@ -8,7 +8,7 @@ const {
 } = require('../shemas/productShemas');
 
 const router = express.Router();
-const services = new settingsRouter();
+const services = new settingsService();
 
 router.get('/', async (req, res) => {
   const products = await services.find();
