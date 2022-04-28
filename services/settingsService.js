@@ -295,11 +295,11 @@ class settingsService {
   }
 
   find() {
-    return new Promise((resolve, reject) => {
+    (resolve, reject) => {
       setTimeout(() => {
         resolve(this.menu);
       }, 2000);
-    });
+    };
   }
 }
 
