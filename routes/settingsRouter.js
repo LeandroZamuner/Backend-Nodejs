@@ -1,4 +1,3 @@
-const { Router } = require('express');
 const express = require('express');
 const settingsRouter = require('../services/settingsService');
 const validatorHandler = require('../middlewares/validatorHandler');
