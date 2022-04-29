@@ -295,22 +295,7 @@ class settingsService {
   }
 
   find() {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(this.menu);
-      }, 2000);
-    });
-  }
-
-  async findOne(id) {
-    const menu = this.menu.find((item) => item.id === id);
-    if (!menu) {
-      throw boom.notFound('products not found');
-    }
-    if (menu.isBlock) {
-      throw boom.conflict('products is block');
-    }
-    return menu;
+    return this.menu;
   }
 }
 
